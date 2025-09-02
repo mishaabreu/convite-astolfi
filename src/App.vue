@@ -36,7 +36,7 @@ const accept = () => {
 </script>
 <template>
   <div v-if="step === 1" class="container">
-    <h1>maju, gostaria de saber se você quer ir no CEU comigo ver a final do futsal!! 🥰</h1>
+    <h1>maria, será que podemos ficar fofocando por videochamada enquanto tomamos uma cervejinha? 🍻🥰</h1>
     <div class="buttons">
       <button class="accept-button" @click="accept">Sim</button>
       <button
@@ -50,7 +50,12 @@ const accept = () => {
   </div>
   <div v-if="step === 2" class="container">
     <h2>eu sabia que você não iria resistir! kakaka</h2>
-    <h3>mandarei mais informações no wpp. um beijo, linda! 🥰</h3>
+<h3>
+  coloca esse grande evento na sua agenda, é só 
+  <a href="https://calendar.app.google/sLti1z4Vp2EfcfEV6">clicar no link</a>
+  :
+</h3>
+    <h3>um beijo, linda! 🥰</h3>
 
   </div>
 </template>
