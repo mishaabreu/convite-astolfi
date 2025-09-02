@@ -39,13 +39,13 @@ const accept = () => {
     <h1>maria, será que podemos ficar fofocando por videochamada
       enquanto tomamos uma cervejinha? 🍻🥰</h1>
     <div class="buttons">
-      <button class="accept-button" @click="accept">Bora!</button>
+      <button class="accept-button" @click="accept">bora!</button>
       <button
         ref="noButton"
         @mouseenter="moveButton"
         class="no-button"
       >
-        Vo nada...
+        vo nada
       </button>
     </div>
   </div>
