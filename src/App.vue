@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import catBeerImage from '@/assets/catbeer.png';
 
 const noButton = ref<HTMLButtonElement | null>(null);
 const step = ref(1)
@@ -31,9 +32,9 @@ const moveButton = () => {
 
 const accept = () => {
   step.value = 2;
-
 };
 </script>
+
 <template>
   <div v-if="step === 1" class="container">
     <h1>maria, será que podemos ficar fofocando por videochamada
@@ -49,25 +50,26 @@ const accept = () => {
       </button>
     </div>
   </div>
+
   <div v-if="step === 2" class="container">
     <h2>kakaka eu sabia que você não iria resistir!</h2>
-<h3>
-  já coloca esse grande evento na sua agenda, é só 
-  <a href="https://calendar.app.google/sLti1z4Vp2EfcfEV6">clicar no link</a>
-  !
-</h3>
+    <h3>
+      já coloca esse grande evento na sua agenda, é só 
+      <a href="https://calendar.app.google/sLti1z4Vp2EfcfEV6">clicar no link</a>
+      !
+    </h3>
     <h3>um beijo, linda! 🥰</h3>
-
+    <img :src="catBeerImage" alt="Um gatinho bebendo cerveja" class="background-image" />
   </div>
 </template>
-
-
 
 <style>
 .container {
   text-align: center;
   margin-top: 10%;
   font-family: Arial, sans-serif;
+  position: relative; 
+  min-height: 80vh; 
 }
 
 h1 {
@@ -103,5 +105,15 @@ button:hover {
 .no-button {
   background-color: #ffcccc;
   position: absolute;
+}
+
+/* Regras para a imagem de fundo */
+.background-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  opacity: 0.8;
+  z-index: -1;
 }
 </style>
