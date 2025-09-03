@@ -54,7 +54,7 @@ const accept = () => {
   <div v-if="step === 2" class="container">
     <h2>kakaka eu sabia que você não iria resistir!</h2>
     <h3>
-      já coloca esse grande evento na sua agenda, é só 
+      já coloca esse grande evento na sua agenda, é só
       <a href="https://calendar.app.google/sLti1z4Vp2EfcfEV6" target="_blank">clicar no link</a>
       !
     </h3>
@@ -108,7 +108,7 @@ button:hover {
   position: absolute;
 }
 
-/* New CSS for the image on the second screen */
+/* Nova classe CSS para a imagem na segunda tela */
 .cat-image {
   position: absolute;
   bottom: 5vh;
