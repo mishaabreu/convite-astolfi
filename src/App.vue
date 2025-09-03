@@ -55,11 +55,11 @@ const accept = () => {
     <h2>kakaka eu sabia que você não iria resistir!</h2>
     <h3>
       já coloca esse grande evento na sua agenda, é só 
-      <a href="https://calendar.app.google/sLti1z4Vp2EfcfEV6">clicar no link</a>
+      <a href="https://calendar.app.google/sLti1z4Vp2EfcfEV6" target="_blank">clicar no link</a>
       !
     </h3>
     <h3>um beijo, linda! 🥰</h3>
-    <img :src="catBeerImage" alt="Um gatinho bebendo cerveja" class="background-image" />
+    <img :src="catBeerImage" alt="Um gatinho bebendo cerveja" class="cat-image" />
   </div>
 </template>
 
@@ -68,8 +68,8 @@ const accept = () => {
   text-align: center;
   margin-top: 10%;
   font-family: Arial, sans-serif;
-  position: relative; 
-  min-height: 80vh; 
+  position: relative;
+  min-height: 80vh;
 }
 
 h1 {
@@ -82,10 +82,10 @@ h1 {
   width: 300px;
   height: 200px;
   margin: 0 auto;
-
 }
 
 .accept-button {
+  background-color: #333;
   color: #ffffff;
 }
 
@@ -100,6 +100,7 @@ button {
 
 button:hover {
   background-color: #f0f0f0;
+  color: #333;
 }
 
 .no-button {
@@ -107,13 +108,13 @@ button:hover {
   position: absolute;
 }
 
-/* Regras para a imagem de fundo */
-.background-image {
+/* New CSS for the image on the second screen */
+.cat-image {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 200px;
-  opacity: 0.8;
-  z-index: -1;
+  bottom: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 250px;
+  opacity: 0.9;
 }
 </style>
