@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import catBeerImage from '@/assets/catbeer.png';
 
 const noButton = ref<HTMLButtonElement | null>(null);
 const step = ref(1)
@@ -38,7 +37,7 @@ const accept = () => {
 <template>
   <div v-if="step === 1" class="container">
     <h1>maria, será que podemos ficar fofocando por videochamada
-      enquanto tomamos uma cervejinha? 🍻🥰</h1>
+      enquanto tomamos uma cervejinha? 🍻</h1>
     <div class="buttons">
       <button class="accept-button" @click="accept">bora!</button>
       <button
@@ -59,7 +58,6 @@ const accept = () => {
       !
     </h3>
     <h3>um beijo, linda! 🥰</h3>
-    <img :src="catBeerImage" alt="Um gatinho bebendo cerveja" class="cat-image" />
   </div>
 </template>
 
@@ -106,15 +104,5 @@ button:hover {
 .no-button {
   background-color: #ffcccc;
   position: absolute;
-}
-
-/* Nova classe CSS para a imagem na segunda tela */
-.cat-image {
-  position: absolute;
-  bottom: 5vh;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 250px;
-  opacity: 0.9;
 }
 </style>
